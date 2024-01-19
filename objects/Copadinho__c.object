@@ -163,4 +163,23 @@
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Copadinhos</relationshipLabel>
+        <relationshipName>Copadinhos</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <validationRules>
+        <fullName>CopaAccountEmpty</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Account__c )</errorConditionFormula>
+        <errorMessage>Conta não pode ficar vazia</errorMessage>
+    </validationRules>
 </CustomObject>
