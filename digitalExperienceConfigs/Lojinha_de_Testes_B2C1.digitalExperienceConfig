@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Lojinha de Testes B2C</label>
+    <site>
+        <urlPathPrefix></urlPathPrefix>
+    </site>
+    <space>site/Lojinha_de_Testes_B2C1</space>
+</DigitalExperienceConfig>

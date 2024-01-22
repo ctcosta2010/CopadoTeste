@@ -1,0 +1,49 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Payment Processing",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"9d64894b-a8ee-46dc-aa85-845f0029dfd0\",\"columns\":[{\"UUID\":\"e3f38c3b-a4b5-43b0-9a2c-9c61862fc04c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "id" : "e3f38c3b-a4b5-43b0-9a2c-9c61862fc04c",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "9d64894b-a8ee-46dc-aa85-845f0029dfd0",
+          "type" : "component"
+        } ],
+        "id" : "7b0514ed-c35c-419d-bd78-bc131e56d873",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "5f656b5e-0fd0-4e4e-ac7e-25fe61d5ce40",
+          "type" : "component"
+        } ],
+        "id" : "01a52b4e-80a7-44a8-9090-0156e03128cc",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "1cebd843-4dd8-4a6d-a540-ac299b72fbe4",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "External",
+    "viewType" : "payment-processing"
+  }
+}
