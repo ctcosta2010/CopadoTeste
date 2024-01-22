@@ -1,0 +1,60 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Order",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"c7eff42f-89fa-448d-a483-4ef742100750\",\"columns\":[{\"UUID\":\"94448cc3-5869-451b-80e1-9e8e507db4a7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bodyText" : "We will send an email with your confirmation number and receipt shortly.",
+                "buttonText" : "Continue Shopping",
+                "confirmationNumberText" : "Confirmation Number",
+                "headerText" : "Thank you for your order!"
+              },
+              "definition" : "commerce_unified_checkout:orderConfirmation",
+              "id" : "ba6af17e-aa29-4589-9520-38044a1d4e39",
+              "type" : "component"
+            } ],
+            "id" : "94448cc3-5869-451b-80e1-9e8e507db4a7",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "c7eff42f-89fa-448d-a483-4ef742100750",
+          "type" : "component"
+        } ],
+        "id" : "7e5f401e-434b-46b6-9b9f-779e5ea57cea",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "c6e5c1db-2ee6-475c-9007-5a4c729cc752",
+          "type" : "component"
+        } ],
+        "id" : "fc673879-cef6-4eec-be64-67af53127973",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "08002b1b-6515-4e00-bb3b-29b0f347bf8c",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "order"
+  }
+}
